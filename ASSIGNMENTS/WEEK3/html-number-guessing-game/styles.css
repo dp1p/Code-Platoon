@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 400
+}
+
+button {
+
+  align-items: center;
+
+}
+
+
+
+
+.container {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin: 10px;
+  border: 2px black;
+  background-color: beige;
+  border-style: dashed;
+  width: 50%
+
+}
+
+
+#screen{
+  border-style: groove;
+  border: thich black; 
+  background-color: #EEEEEE;
+  grid-column: span 4;
+
+}
+
+
+#old-results{
+  border-style: groove;
+  border: thich black; 
+  background-color: #EEEEEE;
+  grid-column: span 4;
+
+}
+
+
