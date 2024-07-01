@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "bulma/css/bulma.min.css";
 import axios from 'axios'
+import Planet from "../Pages/Planet";
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
-
 
 function Hero() {
   const [character, setCharacter] = useState("");
@@ -41,7 +41,7 @@ function Hero() {
                       Click on our latest release!
                     </p>
                     <button class="button is-warning">
-                      Dragon Dating Simulator
+                        <Link to="/planet">To the Planets!</Link>
                     </button>
                   </div>
                 </div>

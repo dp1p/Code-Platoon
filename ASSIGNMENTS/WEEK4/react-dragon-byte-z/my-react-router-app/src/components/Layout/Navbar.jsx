@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "bulma/css/bulma.min.css";
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+import { Outlet, Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -19,7 +20,7 @@ function Navbar() {
           <div class="navbar-menu"> {/* ESSENTIALLY CONTAINS THE NAV BAR ITEMS */}
             <div class="navbar-start">  {/* <--- THIS STARTS THE LEFT SIDE OF THE NAVIGATION BAR*/}
               <a class="navbar-item">
-                Home
+                <Link to="/">Home</Link>
               </a>
 
 
