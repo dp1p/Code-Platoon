@@ -8,7 +8,6 @@
 
 #dragon-font{
     font-family: saiyan;
-    font-size: 4rem;
     -webkit-text-stroke: 1px white;
 }
 
@@ -18,7 +17,29 @@
 }
 
 .background-overlay{
-    /* background-image: url(src/assets/images/DopeGoku.webp); */
+    background-image: url(src/assets/images/DopeGoku.webp);
     background-size: cover;
     background-position: center;
+    min-height: 600px;
+}
+
+#column-with-logo{
+    margin-top: 100px;
+}
+
+#column-with-button{
+    margin-top: 200px;
+}
+
+.content{
+    padding-right: 5px;
+}
+
+.media-content {
+    width: 850px;
+}
+
+.image-card {
+  width: 250px;
+  height: 250px;
 }

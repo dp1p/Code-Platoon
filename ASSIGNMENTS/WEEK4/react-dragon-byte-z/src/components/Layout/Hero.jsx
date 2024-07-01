@@ -24,19 +24,28 @@ function Hero() {
 
   return (
     <>
-      <section class="hero is-medium">
+      <section class="hero is-small">
         <div className="background-overlay">
           <div class="hero-body">
             <div className="columns">
-              <div className="column">
-                <div class="logo">
-                  <img src="src/assets/images/LOGO FULL.png"></img>
+              <div class="column">
+                <div id="column-with-logo">
+                  <p class="subtitle is-size-1" id="dragon-font">
+                    WELCOME TO... <br></br>
+                    <div class="logo">
+                      <img src="src/assets/images/LOGO FULL.png"></img>
+                    </div>
+                  </p>
+                  <div id="column-with-button">
+                    <p id="dragon-font" class="is-size-4">
+                      Click on our latest release!
+                    </p>
+                    <button class="button is-warning">
+                      Dragon Dating Simulator
+                    </button>
+                  </div>
                 </div>
-                <p class="subtitle" id="dragon-font">
-                  WELCOME TO <br></br> DRAGON BYTE Z
-                </p>
               </div>
-
               <div className="column is-3" id="column-is-3">
                 <div>
                   <img src={character} alt="" class="image-hero"></img>
