@@ -1,0 +1,24 @@
+@font-face{
+    font-family: 'saiyan';
+    src: url(src/assets/fonts/saiyan_sans/Saiyan-Sans.ttf);
+}
+.logo{
+    width: 300px;
+}
+
+#dragon-font{
+    font-family: saiyan;
+    font-size: 4rem;
+    -webkit-text-stroke: 1px white;
+}
+
+.image-hero{
+    max-height: 600px;
+    max-width: 600px;
+}
+
+.background-overlay{
+    /* background-image: url(src/assets/images/DopeGoku.webp); */
+    background-size: cover;
+    background-position: center;
+}
