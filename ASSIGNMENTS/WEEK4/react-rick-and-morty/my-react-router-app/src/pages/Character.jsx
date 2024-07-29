@@ -3,10 +3,11 @@ import { useParams } from 'react-router-dom' //this is to dynamicically extract 
 import axios from 'axios'
 
 const Character = () => {
-    const {id} = useParams(); //useParams will grab the id of the specific character, destrcutre the id to get info, and paste the id in the url without needing to rerender
+    const {id} = useParams() //useParams will grab the id of the specific character, destrcutre the id to get info, and paste the id in the url without needing to rerender
     
     const [characterInfo, setCharacterInfo] = useState({}) //we are now grabbing an individual character
 
+    console.log({id})
     //it will grab the specfic character id Info
     useEffect(()=>{
       //grabs the cooresponding character ID

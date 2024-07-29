@@ -1,0 +1,26 @@
+[
+{
+  "model": "student_app.student",
+  "pk": 1,
+  "fields": {
+    "name": "Daniel S. Phanachone",
+    "student_email": "phanachone@school.com",
+    "personal_email": "123cheese@yahoo.com",
+    "locker_number": 12,
+    "locker_combination": "12-45-23",
+    "good_student": true
+  }
+},
+{
+  "model": "student_app.student",
+  "pk": 2,
+  "fields": {
+    "name": "Earl D. Nuss",
+    "student_email": "earl@school.com",
+    "personal_email": "ihateSchool123@yahoo.com",
+    "locker_number": 112,
+    "locker_combination": "02-05-97",
+    "good_student": true
+  }
+}
+]

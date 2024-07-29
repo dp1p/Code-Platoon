@@ -18,7 +18,7 @@ const getGuess = () =>{
         result = inputValue + "? BZZZT TRY AGAIN! Try going higher!";
         document.querySelector("#old-results").innerHTML = oldResultsArr; //
         oldResultsArr.push(inputValue);  //appends the old results that were wrong to array
-        //document.querySelector("#old-results").innerHTML = guessThis;
+        document.querySelector("#old-results").innerHTML = guessThis;
     } else if (inputValue > guessThis) {
         
         result = inputValue + "? BZZZT TRY AGAIN! Try going Lower!";
@@ -28,8 +28,7 @@ const getGuess = () =>{
     } else if (inputValue === guessThis) {
         result = ("CORRECT! THE RANDOM NUMBER IS " + guessThis);
         
-        document.body.style.backgroundImage =
-          "url('/Users/danielphanachone/Documents/CodePlatoon/ASSIGNMENTS/WEEK3/html-number-guessing-game/img1.webp')";
+        //document.body.style.backgroundColor = "red";
     }
     
     document.querySelector("#screen").innerHTML = result;

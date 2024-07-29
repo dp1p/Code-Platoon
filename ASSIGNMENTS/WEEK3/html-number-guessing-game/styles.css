@@ -16,10 +16,7 @@ button {
 
 }
 
-
-
-
-.container {
+.container { /* this is the yellow box */
   align-content: center;
   justify-content: center;
   text-align: center;
@@ -33,7 +30,7 @@ button {
 }
 
 
-#screen{
+#screen{  /* this is the gray box inside container */
   border-style: groove;
   border: thich black; 
   background-color: #EEEEEE;
@@ -42,12 +39,11 @@ button {
 }
 
 
-#old-results{
+#old-results{ /* this is the gray box above */
   border-style: groove;
   border: thich black; 
   background-color: #EEEEEE;
   grid-column: span 4;
-
 }
 
 

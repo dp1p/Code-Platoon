@@ -1,0 +1,23 @@
+.backgroundStyle {
+  background-image: url("https://64.media.tumblr.com/2f7c90c3af6e3070dae2463d254ff507/6ea338eb2feb81fb-24/s1280x1920/e7bdc6a7b5c2fba8155d9d04a33c1c8c5bc39b74.jpg");
+  background-size: cover; 
+  background-position: center; 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  border-radius: 20px; 
+}
+
+#youtube-vid{
+    width: 990px;
+    height: 570px; /* Set a fixed height (adjust as needed) */
+    max-width: 10000px; /* Set a maximum width (adjust as needed) */
+
+    transform: translateY(-180px) translateX(-10px); /* allows to specify where the video should go*/
+    
+}
+
+
+/* make button next page*/

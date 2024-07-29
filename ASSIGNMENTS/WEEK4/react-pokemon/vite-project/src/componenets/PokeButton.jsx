@@ -3,9 +3,9 @@ import axios from "axios"
 
     function PokeButton() {
         
-      const [type, setType] = useState("");
+      // const [type, setType] = useState("");
       const [pokeImg, setPokeImg] = useState("")
-      const catchEmAll = []
+      // const catchEmAll = []
 
       
         
@@ -25,21 +25,27 @@ import axios from "axios"
       /* as soon as you hit NPM RUN DEV, it will IMMEDIATELY FETCH THE IMAGE! BEHIND THE CURTAIN! */
       /* ON CLICK, YOU WILL CALL ANOTHER FUNCTION THAT WILL REVEAL THE API CALL */
       /* using useEffect to fetch api to set the pokemon Type  */
-      useEffect( () => { /* runs on render*/ /* len "i will give you this 5$ rachel, idk when. "*/
-        async function FetchData(){
-          try {
-            let randomNum = Math.floor(Math.random()*100)
-            let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${randomNum}`)
+      
+      
+      async function FetchData() {
+        try {
+          let randomNum = Math.floor(Math.random() * 23); + 1// random num 1-100
+          let response = await axios.get(
+            `https://pokeapi.co/api/v2/pokemon/${randomNum}`
+          );
 
-            console.log(response);
-            setPokeImg(response.data.sprites.front_default)
-          } catch (error) {
-            console.error("An error occurred:", error);
-          }
-        } FetchData();
+          //console.log(response);
+          setPokeImg(response.data.sprites.front_default);
+        } catch (error) {
+          console.error("An error occurred:", error);
+        }
+      }
+      
+      useEffect( () => { /* runs on render*/                                  /* len "i will give you this 5$ rachel, idk when. "*/
+         FetchData();
       }, [])
       
-      const curtainReveal = () => {
+      const curtainReveal = () => { //grab 5 more calls of fetchdata
         let ImgElement = document.getElementById("insertPokemon")
         ImgElement.src = pokeImg
         // let container = document.getElementById("container");
@@ -52,10 +58,10 @@ import axios from "axios"
     
     return (
       <>
-        <button onClick={curtainReveal}>Press Me</button>
+        <button onClick={() => FetchData()}>Press Me</button>
         {/* <div id="container"></div> */}
         <br></br>
-        <img id = 'insertPokemon'></img>
+        <img src = {pokeImg}></img>
       </>
     );
 

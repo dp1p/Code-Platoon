@@ -16,7 +16,7 @@ function Favorites() {
         CLEAR ALL FAVORITES
       </button>
       <div className="card-container">
-        {favorites.length ? ( favorites.map((character) => ( <Card key={character.id} character={character} /> ))
+        {favorites.length ? ( favorites.map((character) => ( <Card characterInfo={character} /> ))
         ) : (
           //IF FALSE
           <div>NO FAVORITES!</div>

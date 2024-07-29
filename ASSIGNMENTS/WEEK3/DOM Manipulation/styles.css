@@ -1,0 +1,15 @@
+img {
+    height: 200px;  
+    width: 200px;
+}
+
+.img-container{
+    padding: 20px; /* modifies spacing around the image */
+    border-style: solid
+}
+
+.container {
+   background-color: #ffe4c4;
+   text-align: center;
+   vertical-align: middle;
+}

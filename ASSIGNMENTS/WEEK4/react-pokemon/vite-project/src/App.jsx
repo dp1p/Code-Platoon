@@ -5,7 +5,7 @@ import PokeButton from './componenets/PokeButton'
 function App() {
   return (
     <>
-      <p>Len and Rachel PokeGals!!!</p>
+      <p>Daniel: The Ultimate PokeDex</p>
       <PokeButton></PokeButton>
     </>
   )

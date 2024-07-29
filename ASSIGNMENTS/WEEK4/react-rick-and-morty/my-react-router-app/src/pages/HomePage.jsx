@@ -1,15 +1,32 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "./HomePage.css";
+
 
 function HomePage() {
 
+
   return (
     <>
-      <p>
-        HomePage
-      </p>
+      <div className="backgroundStyle">
+            {/* iframe allows us to embed a webpage in*/}
+              <iframe
+                id="youtube-vid"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/PkZtVBNkmso"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+      </div>
+
+      {/* aligning the adult swim */}
+      <div className="columns is-centered m-6">
+        <img src="/adultswim.png" alt="Adult Swim Logo" />
+      </div>
+    
     </>
   );
 }
