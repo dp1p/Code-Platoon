@@ -1,0 +1,27 @@
+
+[
+{
+  "model": "student_app.student",
+  "pk": 1,
+  "fields": {
+    "name": "Daniel S. Phanachone",
+    "student_email": "phanachoned@gmail.com",
+    "personal_email": null,
+    "locker_number": 82,
+    "locker_combination": "12-35-94",
+    "good_student": true
+  }
+},
+{
+  "model": "student_app.student",
+  "pk": 3, 
+  "fields": {
+    "name": "Sami R. Carey",
+    "student_email": "samicare@school.com",
+    "personal_email": "sunburst1234@gmail.com",
+    "locker_number": 2,
+    "locker_combination": "02-13-23",
+    "good_student": true
+  }
+}
+]
